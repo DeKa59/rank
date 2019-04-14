@@ -1,8 +1,8 @@
 {
-  "RankOne": 1,
-  "RankTwo": 2,
-  "RankThree": 3,
-  "RankFour": 4,
-  "RankFive": 5,
-  "RankSix": 6
+  "Bourgeois": 30,
+  "Nôble": 70,
+  "Prophètes": 200,
+  "RankFour": 41000,
+  "RankFive": 50000,
+  "RankSix": 60000
 }
