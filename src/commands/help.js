@@ -1,18 +1,24 @@
-import Discord from 'discord.js';
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _discord = require('discord.js');
+
+var _discord2 = _interopRequireDefault(_discord);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const help = (bot, msg, cmd) => {
-  const richEmbed = new Discord.RichEmbed();
+  const richEmbed = new _discord2.default.RichEmbed();
 
   msg.channel.send({
-    embed: richEmbed
-            .setColor('#ffffff')
-            .setDescription(`${"`" + ">invites" + "`"} - check # invites until next role
-${"`" + ">top <#>" + "`"} - check a certain # of top inviters
-${"`" + ">membercount" + "`"} - check total server member count
-${"`" + ">set <channel-name>" + "`"} - only allow this bot in ${"`" + "<channel-name>" + "`"}
-${"`" + ">set default" + "`"} - allow bot to work in all channels
-Remember to set your invite link to never expire.`)
+    embed: richEmbed.setColor('#ffffff').setDescription(`${"`" + ">invites" + "`"} - Vérifier ton nombres d'invitations
+${"`" + ">top <#>" + "`"} - regardé le top 
+${"`" + ">membercount" + "`"} - Membres total du serveur
+N'oublie pas de créer une invitation permanente.`)
   });
-}
+};
 
-export default help;
+exports.default = help;
